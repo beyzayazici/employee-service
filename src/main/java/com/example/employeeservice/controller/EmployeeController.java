@@ -19,7 +19,7 @@ import java.util.List;
 public class EmployeeController {
 
     @Resource
-    EmployeeService employeeService;
+    private EmployeeService employeeService;
 
     @PostMapping(value = "/add")
     @Operation(summary = "add employee from database")
