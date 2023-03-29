@@ -7,8 +7,9 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-public class EmployeeData implements Serializable {
+public class EmployeeDTO implements Serializable {
     private String name;
-    private String surname;
-    private String email;
+    private String phone;
+    private String country;
+    private String region;
 }

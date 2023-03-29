@@ -1,15 +1,18 @@
-package com.example.employeeservice.populator.impl;
+package com.example.employeeservice.populator;
 
-import com.example.employeeservice.dto.EmployeeData;
+import com.example.employeeservice.dto.EmployeeDTO;
+import com.example.employeeservice.library.Populator;
 import com.example.employeeservice.model.Employee;
-import com.example.employeeservice.populator.Populator;
+import org.springframework.stereotype.Component;
 
-public class EmployeePopulator implements Populator<Employee, EmployeeData> {
+@Component
+public class EmployeePopulator implements Populator<Employee, EmployeeDTO> {
 
     @Override
-    public void populate(Employee source, EmployeeData target) {
-        target.setName(source.getFirstName());
-        target.setSurname(source.getLastName());
-        target.setEmail(source.getEmail());
+    public void populate(Employee source, EmployeeDTO target) {
+        target.setName(source.getName());
+        target.setPhone(source.getPhone());
+        target.setCountry(source.getCountry());
+        target.setRegion(source.getRegion());
     }
 }

@@ -1,36 +1,35 @@
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (1,'Elektronic');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (2,'Cosmetics');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (3,'Home and Living');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (4,'Kitchen');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (5,'Sport');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (6,'Toy');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (7,'Cleaning Products');
-INSERT INTO  PRODUCT_CATEGORY (ID,CATEGORY_NAME)  VALUES (8,'Garden Products');
-
-
-INSERT INTO  LOCATION (ID,ADDRESS,CITY,COUNTRY)  VALUES (1,'İzzettin Çalışlar Street Oğul Apt. No:34','Bahçelievler','İstanbul');
-INSERT INTO  LOCATION (ID,ADDRESS,CITY,COUNTRY)  VALUES (2,'Tokoğlu District Kemal Street.No:47','Bergama','İzmir');
-INSERT INTO  LOCATION (ID,ADDRESS,CITY,COUNTRY)  VALUES (3,'Beethovenstraat 8, 1077 JG','Amsterdam','Netherlands');
-INSERT INTO  LOCATION (ID,ADDRESS,CITY,COUNTRY)  VALUES (4,' Hilal, Turan Güneş Blv. No:64 D:B','Çankaya','Ankara');
-
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (1,35000,'Desktop Computer',5,1,1);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (2,25000,'Laptop',15,1,1);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (3,45000,'Macbook Pro',7,2,1);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (4,38500,'Macbook Air',3,2,1);
-
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (5,700,'Face Cream',120,1,2);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (6,200,'Body Cream',150,3,2);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (7,300,'Moisturizer',70,3,2);
-
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (8,4000,'Vacuum Cleaner',20,4,3);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (9,1500,'Tea Machine',110,3,4);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (10,5750,'Coffee Machine',185,3,4);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (11,1850,'Sneakers',35,1,5);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (12,5950,'Rocket',15,2,5);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (13,9550,'Tent',18,3,5);
-
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (14,1050,'Box Game',98,1,6);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (15,50,'Liquid Detergent',101,1,7);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (16,80,'Toothbrush',135,3,7);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (17,180,'Tooth Paste',1087,4,7);
-INSERT INTO  PRODUCT (ID,PRICE,PRODUCT_NAME,QUANTITY,FK_LOCATION_ID,FK_PRODUCTCATEGORY_ID)  VALUES (18,13,'Flowerpot',91,1,8);
+INSERT INTO EMPLOYEES (ID,NAME,EMAIL,PHONE,ADDRESS,REGION,POSTAL_ZIP,COUNTRY)
+VALUES
+    (1,'Kiona Velasquez','scelerisque@google.net','(0181) 220 1594','P.O. Box 874, 1590 Volutpat St.','Massachusetts','653653','Russian Federation'),
+    (2,'Brittany Owens','adipiscing.lobortis@hotmail.net','(01657) 52872','Ap #788-5159 Egestas Ave','Mersin','8279 UR','Brazil'),
+    (3,'Dustin Wolf','leo@outlook.ca','07376 716235','Ap #272-7299 Gravida. St.','Biobío','774944','Chile'),
+    (4,'Brielle Mathis','posuere.vulputate@hotmail.org','07865 616083','6068 Lorem Rd.','Saint Petersburg City','74814','Australia'),
+    (5,'Ivana Todd','ac.libero.nec@icloud.edu','0800 1111','Ap #886-8362 Natoque Street','Quindío','57161','Ukraine'),
+    (6,'Noah Johnson','a.purus@protonmail.edu','0971 368 8935','Ap #284-7046 Primis Av.','Valparaíso','445376','Netherlands'),
+    (7,'Samson Terrell','dignissim.tempor@yahoo.com','(016977) 0512','P.O. Box 141, 9544 Vulputate, St.','Trøndelag','26-76','Ukraine'),
+    (8,'Keely Bowen','arcu.nunc@hotmail.couk','0923 843 5662','Ap #396-1249 Suspendisse St.','Saarland','Q02 2GX','Italy'),
+    (9,'Lyle Calderon','donec@yahoo.net','(023) 9012 7057','3236 Egestas, Rd.','Cordillera Administrative Region','32381-43815','Spain'),
+    (10,'Calvin Jacobs','tellus.aenean@outlook.edu','07960 787888','Ap #440-1603 Aliquam St.','Karnataka','3797','Nigeria'),
+    (11,'Wynter Thompson','vitae.aliquam@google.org','070 4589 2801','932-8178 Ut Av.','Kurgan Oblast','7125-1564','Mexico'),
+    (12,'Sage Bender','neque.nullam@icloud.edu','0500 633216','P.O. Box 578, 6183 Quam Street','Lakshadweep','7472','Mexico'),
+    (13,'Keegan Benson','mattis.velit@outlook.net','(0117) 172 5663','P.O. Box 847, 3577 Eu Ave','Cajamarca','0688-7873','Philippines'),
+    (14,'Melodie Mcintyre','dignissim@aol.edu','(01833) 287363','Ap #420-7343 Pede, St.','Dōngběi','W4T 2XX','India'),
+    (15,'Pascale Booker','eu.euismod@hotmail.couk','(01409) 435255','Ap #487-7202 Aliquam Road','Imo','33687','Poland'),
+    (16,'Hakeem Doyle','sociis.natoque@hotmail.org','(0161) 812 2834','Ap #468-2854 Amet Ave','Franche-Comté','224347','France'),
+    (17,'Nathaniel Velazquez','dictum.augue@protonmail.edu','(016977) 7948','174-2145 Odio Road','Gävleborgs län','82471-56466','Ukraine'),
+    (18,'Dieter Myers','duis@google.couk','(01267) 37761','Ap #770-2974 Ac St.','Munster','78534','Philippines'),
+    (19,'Amelia Sanford','vivamus@hotmail.couk','0500 856133','Ap #988-2664 Nec Ave','Puntarenas','33983','Peru'),
+    (20,'Bryar Miles','tincidunt.orci@yahoo.net','0855 777 0848','5991 Lectus. St.','North-East Region','9665','Italy'),
+    (21,'Patricia Gilmore','auctor.non.feugiat@outlook.ca','07948 756026','467-171 Iaculis, Ave','Nariño','16425','Canada'),
+    (22,'Malcolm Bradley','aliquam@aol.edu','0845 46 48','5421 Vel Ave','Östergötlands län','32-68','Pakistan'),
+    (23,'Ingrid White','sapien.molestie@google.org','(012197) 14471','505-599 Purus St.','Gelderland','82146-630','Netherlands'),
+    (24,'Chava Hopkins','dis.parturient@google.edu','07624 256681','Ap #755-9852 Luctus. St.','North Gyeongsang','95329','Russian Federation'),
+    (25,'Gail Bond','augue.scelerisque@outlook.edu','0800 735688','Ap #801-3793 Nonummy St.','Ulster','5538','Pakistan'),
+    (26,'Harriet Holman','metus.facilisis@google.ca','07504 581851','529-3982 Sagittis Avenue','South Island','4148','Turkey'),
+    (27,'Jack Kennedy','mauris.elit@aol.edu','(01781) 66787','185-7369 Cursus. Avenue','South Gyeongsang','51516','India'),
+    (28,'Vaughan French','et@hotmail.org','(016478) 33661','792-240 Augue Avenue','Minas Gerais','711508','Norway'),
+    (29,'Gloria York','sed.sem.egestas@hotmail.edu','07643 451785','1844 Bibendum Avenue','Piemonte','41659','Peru'),
+    (30,'Keely Beck','ultricies.ornare@yahoo.couk','(014501) 27187','185-4037 Consectetuer Rd.','Oaxaca','GM8 7YQ','New Zealand'),
+    (31,'James Bates','felis@aol.ca','0976 182 7821','131-6335 Cursus. Avenue','East Region','566437','Costa Rica'),
+    (32,'Norman York','sit.amet@icloud.com','(012864) 36810','134-8134 Integer Rd.','Auvergne','75767-052','South Africa'),
+    (33,'Megan Bender','ut.odio@icloud.edu','07624 565231','P.O. Box 778, 6554 Quis, Ave','Tyrol','05745','Mexico');
